@@ -23,6 +23,9 @@ $(eval $(call add_define,WA_RZG2L_GIC64BIT))
 # Enable workarounds for selected Cortex-A55 erratas.
 ERRATA_A55_1530923				:= 1
 
+# Select MX25U25645G Flash for VK-RZ/V2L board
+SPI_FLASH				:= MX25U25645G
+
 ifndef SPI_FLASH
   SPI_FLASH = MT25QU512ABB
 endif
